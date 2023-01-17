@@ -9,8 +9,8 @@ const prisma = new PrismaClient();
 app.register(cors);
 
 app.get('/', async () => {
-  const onhabits = await prisma.onHabit.findMany();
-  return onhabits;
+  const onhabit = await prisma.onHabit.findMany();
+  return onhabit;
 });
 
 app.listen({

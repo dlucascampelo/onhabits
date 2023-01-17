@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model OnHabit {
+model onHabit {
   id         String   @id @default(uuid())
   title      String
   created_at DateTime
